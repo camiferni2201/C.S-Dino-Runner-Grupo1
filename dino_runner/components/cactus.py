@@ -13,7 +13,7 @@ class LargeCactus(Obstacle):
     def __init__(self, image):
         self.index = random.randint(0,2)
         super().__init__(image, self.index)
-        self.rect.y = 305
+        self.rect.y = 295
 
 class Bird(Obstacle):
     def __init__(self, image):
@@ -37,3 +37,7 @@ class Bird(Obstacle):
     def fly(self):
         self.image = self.fly_img[self.type][self.fly_index // 5]
         self.fly_index += 1
+
+
+
+        
